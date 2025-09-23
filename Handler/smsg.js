@@ -108,7 +108,7 @@ function smsg(conn, m, store) {
             previewType: "PHOTO",
             thumbnailUrl: 'https://i.ibb.co/7JcYBD5Y/cbb9f804644ae8c4.jpg', 
             thumbnail: kali, 
-            sourceUrl: 'https://github.com/xhclintohn/DAVE-XD'
+            sourceUrl: 'https://github.com/huh234/DAVE-XD'
           }
         }
       }, 

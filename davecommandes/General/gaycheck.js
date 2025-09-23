@@ -15,7 +15,7 @@ module.exports = {
       // Validate m.sender
       if (!m.sender || typeof m.sender !== 'string' || !m.sender.includes('@s.whatsapp.net')) {
         console.error(`Invalid m.sender: ${JSON.stringify(m.sender)}`);
-        return m.reply(`◈━━━━━━━━━━━━━━━━◈\nShit’s broken, can’t read your number! Try again, you dumbass.\nCheck https://github.com/xhclintohn/DAVE-XD for help.\n◈━━━━━━━━━━━━━━━━◈`);
+        return m.reply(`◈━━━━━━━━━━━━━━━━◈\nShit’s broken, can’t read your number! Try again, you dumbass.\nCheck https://github.com/huh234/DAVE-XD for help.\n◈━━━━━━━━━━━━━━━━◈`);
       }
 
       const userNumber = m.sender.split('@')[0];
@@ -58,7 +58,7 @@ This is just for shits and giggles, don’t cry, you sensitive loser! 😈
 
     } catch (error) {
       console.error(`Gaycheck command fucked up: ${error.stack}`);
-      await m.reply(`◈━━━━━━━━━━━━━━━━◈\nShit broke, can’t check your gay meter! Try again, you dumbass.\nCheck https://github.com/xhclintohn/DAVE-XD for help.\n◈━━━━━━━━━━━━━━━━◈`);
+      await m.reply(`◈━━━━━━━━━━━━━━━━◈\nShit broke, can’t check your gay meter! Try again, you dumbass.\nCheck https://github.com/huh234/DAVE-XD for help.\n◈━━━━━━━━━━━━━━━━◈`);
     }
   }
 };

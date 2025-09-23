@@ -154,7 +154,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
               showAdAttribution: false,
               title: botName,
               body: `Bot initialized successfully.`,
-              sourceUrl: `https://github.com/xhclintohn/DAVE-XD`,
+              sourceUrl: `https://github.com/huh234/DAVE-XD`,
               mediaType: 1,
               renderLargerThumbnail: true
             }
@@ -183,7 +183,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
               showAdAttribution: false,
               title: botName,
               body: `Select an option to proceed.`,
-              sourceUrl: `https://github.com/xhclintohn/DAVE-XD`,
+              sourceUrl: `https://github.com/huh234/DAVE-XD`,
               mediaType: 1,
               renderLargerThumbnail: true
             }

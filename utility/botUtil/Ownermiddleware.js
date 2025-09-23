@@ -9,7 +9,7 @@ const Ownermiddleware = async (context, next) => {
 
 │❒ Crawl back into the abyss where mediocrity thrives before I personally wipe you from this reality fool. 💀👿
 ◈━━━━━━━━━━━━━━━━◈
-> ρσɯҽɾԃ Ⴆყ Tσxιƈ ɱԃȥ `);
+> ρσɯҽɾԃ Ⴆყ DAVE-XD `);
     }
 
     await next();

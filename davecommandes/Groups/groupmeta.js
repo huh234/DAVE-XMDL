@@ -22,7 +22,7 @@ module.exports = async (context) => {
                                 body: `Group Update`,
                                 previewType: "PHOTO",
                                 thumbnail: pict,
-                                sourceUrl: 'https://github.com/xhclintohn/DAVE-XD'
+                                sourceUrl: 'https://github.com/huh234/DAVE-XD'
                             }
                         }
                     });
@@ -44,7 +44,7 @@ module.exports = async (context) => {
                                 body: `Group Update`,
                                 previewType: "PHOTO",
                                 thumbnail: pict,
-                                sourceUrl: 'https://github.com/xhclintohn/DAVE-XD'
+                                sourceUrl: 'https://github.com/huh234/DAVE-XD'
                             }
                         }
                     });
@@ -68,7 +68,7 @@ module.exports = async (context) => {
                                 body: `Group Update`,
                                 previewType: "PHOTO",
                                 thumbnail: pict,
-                                sourceUrl: 'https://github.com/xhclintohn/DAVE-XD'
+                                sourceUrl: 'https://github.com/huh234/DAVE-XD'
                             }
                         }
                     });

@@ -103,7 +103,7 @@ module.exports = {
           title: `DAVE-XD WA bot`,
           body: `Pσɯҽɾҽԃ Ⴆყ Tσxιƈ-MD`,
           thumbnail: pict,
-          sourceUrl: `https://github.com/xhclintohn/DAVE-XD`,
+          sourceUrl: `https://github.com/huh234/DAVE-XD`,
           mediaType: 1,
           renderLargerThumbnail: true
         }

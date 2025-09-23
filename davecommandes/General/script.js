@@ -19,7 +19,7 @@ module.exports = async (context) => {
   }
 
   try {
-    const repoUrl = 'https://api.github.com/repos/xhclintohn/DAVE-XD';
+    const repoUrl = 'https://api.github.com/repos/huh234/DAVE-XD';
     const response = await fetch(repoUrl);
     const repoData = await response.json();
 
@@ -61,7 +61,7 @@ module.exports = async (context) => {
           showAdAttribution: false,
           title: `${botname}`,
           body: `Yo! Don’t fuck this up.`,
-          sourceUrl: `https://github.com/xhclintohn/DAVE-XD`,
+          sourceUrl: `https://github.com/huh234/DAVE-XD`,
           mediaType: 1,
           renderLargerThumbnail: true
         }
@@ -69,6 +69,6 @@ module.exports = async (context) => {
     }, { quoted: m });
   } catch (error) {
     console.error('Error in repo command:', error);
-    await client.sendMessage(m.chat, { text: `◈━━━━━━━━━━━━━━━━◈\n│❒ Couldn’t grab repo info, something’s fucked up. Check it yourself: https://github.com/xhclintohn/DAVE-XD` }, { quoted: m });
+    await client.sendMessage(m.chat, { text: `◈━━━━━━━━━━━━━━━━◈\n│❒ Couldn’t grab repo info, something’s fucked up. Check it yourself: https://github.com/huh234/DAVE-XD` }, { quoted: m });
   }
 };

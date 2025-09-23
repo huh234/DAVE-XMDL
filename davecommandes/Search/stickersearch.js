@@ -9,14 +9,14 @@ module.exports = {
 
     if (!botname) {
       console.error(`Botname not set, you useless fuck.`);
-      return m.reply(`◈━━━━━━━━━━━━━━━━◈\nBot’s toast, no botname found! Yell at the dev, you legend.\nCheck https://github.com/xhclintohn/DAVE-XD\n◈━━━━━━━━━━━━━━━━◈`);
+      return m.reply(`◈━━━━━━━━━━━━━━━━◈\nBot’s toast, no botname found! Yell at the dev, you legend.\nCheck https://github.com/huh234/DAVE-XD\n◈━━━━━━━━━━━━━━━━◈`);
     }
 
     try {
       // Validate m.sender
       if (!m.sender || typeof m.sender !== 'string' || !m.sender.includes('@s.whatsapp.net')) {
         console.error(`Invalid m.sender: ${JSON.stringify(m.sender)}`);
-        return m.reply(`◈━━━━━━━━━━━━━━━━◈\nCan’t read your number, you beast! Try again.\nCheck https://github.com/xhclintohn/DAVE-XD\n◈━━━━━━━━━━━━━━━━◈`);
+        return m.reply(`◈━━━━━━━━━━━━━━━━◈\nCan’t read your number, you beast! Try again.\nCheck https://github.com/huh234/DAVE-XD\n◈━━━━━━━━━━━━━━━━◈`);
       }
 
       const userNumber = m.sender.split('@')[0];
@@ -63,7 +63,7 @@ module.exports = {
 
     } catch (error) {
       console.error(`Sticker command fucked up: ${error.stack}`);
-      await m.reply(`◈━━━━━━━━━━━━━━━━◈\nSticker fetch failed, @${userNumber}! Something’s busted, try again. 😈\nCheck https://github.com/xhclintohn/DAVE-XD\n◈━━━━━━━━━━━━━━━━◈`, { mentions: [m.sender] });
+      await m.reply(`◈━━━━━━━━━━━━━━━━◈\nSticker fetch failed, @${userNumber}! Something’s busted, try again. 😈\nCheck https://github.com/huh234/DAVE-XD\n◈━━━━━━━━━━━━━━━━◈`, { mentions: [m.sender] });
     }
   }
 };

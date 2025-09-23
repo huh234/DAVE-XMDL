@@ -77,8 +77,8 @@ module.exports = {
                 name: 'cta_url',
                 buttonParamsJson: JSON.stringify({
                   display_text: 'GitHub Repo',
-                  url: 'https://github.com/xhclintohn/DAVE-XD',
-                  merchant_url: 'https://github.com/xhclintohn/DAVE-XD',
+                  url: 'https://github.com/huh234/DAVE-XD',
+                  merchant_url: 'https://github.com/huh234/DAVE-XD',
                 }),
               },
               {
@@ -109,7 +109,7 @@ module.exports = {
             messageParamsJson: JSON.stringify({
               limited_time_offer: {
                 text: 'DAVE-XD',
-                url: 'https://github.com/xhclintohn/DAVE-XD',
+                url: 'https://github.com/huh234/DAVE-XD',
                 copy_code: 'DAVE',
                 expiration_time: Date.now() * 1000,
               },
@@ -128,7 +128,7 @@ module.exports = {
               mediaType: 1,
               thumbnail: pict,
               mediaUrl: '',
-              sourceUrl: 'https://github.com/xhclintohn/DAVE-XD',
+              sourceUrl: 'https://github.com/huh234/DAVE-XD',
               showAdAttribution: false,
               renderLargerThumbnail: true,
             },

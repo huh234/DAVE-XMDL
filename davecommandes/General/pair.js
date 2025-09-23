@@ -28,6 +28,6 @@ module.exports = async (context) => {
         }
     } catch (error) {
         console.error('Error in pair command:', error);
-        await client.sendMessage(m.chat, { text: `⚠️ *Oops! Failed to process pairing:* ${error.message}\n\nVisit https://github.com/xhclintohn/DAVE-XD for pairing instructions.` }, { quoted: m });
+        await client.sendMessage(m.chat, { text: `⚠️ *Oops! Failed to process pairing:* ${error.message}\n\nVisit https://github.com/huh234/DAVE-XD for pairing instructions.` }, { quoted: m });
     }
 };
