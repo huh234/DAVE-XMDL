@@ -116,7 +116,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
             ``,
             `│❒ *New User Alert*: You've been added to the sudo list.`,
             ``,
-            `│❒ *Credits*: xh_clinton`,
+            `│❒ *Credits*: gift_dave`,
             `◈━━━━━━━━━━━━━━━━◈`
           ].join("\n")
         : [
@@ -134,7 +134,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
             ``,
             `│❒ Ready to proceed? Select an option below.`,
             ``,
-            `│❒ *Credits*: xh_clinton`,
+            `│❒ *Credits*: gift_dave`,
             `◈━━━━━━━━━━━━━━━━◈`
           ].join("\n");
 

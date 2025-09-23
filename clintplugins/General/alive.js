@@ -15,7 +15,7 @@ module.exports = async (context) => {
     }
 
     try {
-        const caption = `◈━━━━━━━━━━━━━━━━◈\n│❒ Yo ${m.pushName}, *${botname}* is alive and ready to fuck shit up! 🖕\n│❒ \n│❒ Type *${prefix}menu* to see what I can do, you pathetic loser.\n◈━━━━━━━━━━━━━━━━◈\n│❒ Powered by *xh_clinton*, 'cause you're too dumb to code`;
+        const caption = `◈━━━━━━━━━━━━━━━━◈\n│❒ Yo ${m.pushName}, *${botname}* is alive and ready to fuck shit up! 🖕\n│❒ \n│❒ Type *${prefix}menu* to see what I can do, you pathetic loser.\n◈━━━━━━━━━━━━━━━━◈\n│❒ Powered by *gift_dave*, 'cause you're too dumb to code`;
 
         // Handle pict (image) input
         let imageOptions;
@@ -60,9 +60,9 @@ module.exports = async (context) => {
 
         // Audio file paths with extra daveity
         const possibleAudioPaths = [
-            path.join(__dirname, 'xh_clinton', 'test.mp3'),
-            path.join(process.cwd(), 'xh_clinton', 'test.mp3'),
-            path.join(__dirname, '..', 'xh_clinton', 'test.mp3'),
+            path.join(__dirname, 'gift_dave', 'test.mp3'),
+            path.join(process.cwd(), 'gift_dave', 'test.mp3'),
+            path.join(__dirname, '..', 'gift_dave', 'test.mp3'),
         ];
 
         let audioFound = false;
@@ -89,7 +89,7 @@ module.exports = async (context) => {
 
         if (!audioFound) {
             console.error('❌ Audio file not found at any path, you incompetent dev');
-            await m.reply(`◈━━━━━━━━━━━━━━━━◈\n│❒ FUCK! ${m.pushName}, couldn't find the voice note.\n│❒ Check xh_clinton/test.mp3, you worthless piece of shit.\n◈━━━━━━━━━━━━━━━━◈`);
+            await m.reply(`◈━━━━━━━━━━━━━━━━◈\n│❒ FUCK! ${m.pushName}, couldn't find the voice note.\n│❒ Check gift_dave/test.mp3, you worthless piece of shit.\n◈━━━━━━━━━━━━━━━━◈`);
         }
 
     } catch (error) {

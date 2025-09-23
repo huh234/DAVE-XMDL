@@ -143,9 +143,9 @@ module.exports = {
 
     // Audio message logic
     const possibleAudioPaths = [
-      path.join(__dirname, 'xh_clinton', 'menu.mp3'),
-      path.join(process.cwd(), 'xh_clinton', 'menu.mp3'),
-      path.join(__dirname, '..', 'xh_clinton', 'menu.mp3'),
+      path.join(__dirname, 'gift_dave', 'menu.mp3'),
+      path.join(process.cwd(), 'gift_dave', 'menu.mp3'),
+      path.join(__dirname, '..', 'gift_dave', 'menu.mp3'),
     ];
 
     let audioPath = null;

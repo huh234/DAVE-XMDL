@@ -19,9 +19,9 @@ module.exports = async (context) => {
 
   try {
     const possibleAudioPaths = [
-      path.join(__dirname, 'xh_clinton', 'bot.mp3'),
-      path.join(process.cwd(), 'xh_clinton', 'bot.mp3'),
-      path.join(__dirname, '..', 'xh_clinton', 'bot.mp3')
+      path.join(__dirname, 'gift_dave', 'bot.mp3'),
+      path.join(process.cwd(), 'gift_dave', 'bot.mp3'),
+      path.join(__dirname, '..', 'gift_dave', 'bot.mp3')
     ];
 
     let audioPath = null;

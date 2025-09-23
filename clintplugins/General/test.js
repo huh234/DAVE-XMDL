@@ -14,9 +14,9 @@ module.exports = {
 
     try {
       const possibleAudioPaths = [
-        path.join(__dirname, 'xh_clinton', 'test.mp3'),
-        path.join(process.cwd(), 'xh_clinton', 'test.mp3'),
-        path.join(__dirname, '..', 'xh_clinton', 'test.mp3'),
+        path.join(__dirname, 'gift_dave', 'test.mp3'),
+        path.join(process.cwd(), 'gift_dave', 'test.mp3'),
+        path.join(__dirname, '..', 'gift_dave', 'test.mp3'),
       ];
 
       let audioPath = null;
@@ -38,7 +38,7 @@ module.exports = {
       } else {
         console.error('❌ Audio file not found at any of the following paths:', possibleAudioPaths);
         await client.sendMessage(m.chat, {
-          text: `◈━━━━━━━━━━━━━━━━◈\n│❒ Shit, couldn’t find test.mp3 in xh_clinton/. Fix your files, you slacker.\n\nPowered by *${botname}*`
+          text: `◈━━━━━━━━━━━━━━━━◈\n│❒ Shit, couldn’t find test.mp3 in gift_dave/. Fix your files, you slacker.\n\nPowered by *${botname}*`
         }, { quoted: m });
       }
     } catch (error) {
