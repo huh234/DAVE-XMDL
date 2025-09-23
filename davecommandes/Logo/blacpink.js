@@ -29,6 +29,6 @@ module.exports = async (context) => {
     }
   } catch (error) {
     console.error('BlackpinkLogo API error:', error);
-    await m.reply(`◈━━━━━━━━━━━━━━━━◈\n│❒ Shit hit the fan, ${m.pushName}! Error: ${error.message}. Bug off and try later, you slacker! 😡\nCheck https://github.com/xhclintohn/Toxic-v2 for help.`);
+    await m.reply(`◈━━━━━━━━━━━━━━━━◈\n│❒ Shit hit the fan, ${m.pushName}! Error: ${error.message}. Bug off and try later, you slacker! 😡\nCheck https://github.com/xhclintohn/Dave-v2 for help.`);
   }
 };

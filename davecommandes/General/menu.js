@@ -110,7 +110,7 @@ module.exports = {
               limited_time_offer: {
                 text: 'DAVE-XD',
                 url: 'https://github.com/xhclintohn/DAVE-XD',
-                copy_code: 'TOXIC',
+                copy_code: 'DAVE',
                 expiration_time: Date.now() * 1000,
               },
               bottom_sheet: {

@@ -17,7 +17,7 @@ module.exports = {
       
       const devContact = {
         phoneNumber: '254735342808',
-        fullName: 'Toxic Dev'
+        fullName: 'Dave Dev'
       };
 
       const vcard = `

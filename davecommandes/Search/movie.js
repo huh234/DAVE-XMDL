@@ -9,7 +9,7 @@ module.exports = async (context) => {
     let imdbt = "";
 
     imdbt += "◈━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◈\n";
-    imdbt += "│ ❒ TOXIC-MD MOVIE SEARCH\n";
+    imdbt += "│ ❒ DAVE-XD MOVIE SEARCH\n";
     imdbt += "◈━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◈\n";
     imdbt += "│ 🎬 Title       : " + fids.data.Title + "\n";
     imdbt += "│ 📅 Year        : " + fids.data.Year + "\n";

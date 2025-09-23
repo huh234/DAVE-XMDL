@@ -27,7 +27,7 @@ module.exports = async _0x4dc5e7 => {
     } else if (_0x2a9e6b[0] == "-x") {
       setTimeout(() => {
         _0x5377ad.sendMessage(_0x4ac4f8.chat, {
-          text: "Toxic will now remove all " + _0x2f8982.length + " foreigners from this group chat in the next second.\n\nGood bye Foreigners. 🥲"
+          text: "Dave will now remove all " + _0x2f8982.length + " foreigners from this group chat in the next second.\n\nGood bye Foreigners. 🥲"
         }, {
           quoted: _0x4ac4f8
         });

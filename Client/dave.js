@@ -51,7 +51,7 @@ module.exports = dave = async (client, m, chatUpdate, store) => {
         const Tag =
             m.message?.extendedTextMessage?.contextInfo?.mentionedJid || [];
 
-        var msgToxic = m.message?.extendedTextMessage?.contextInfo?.quotedMessage || null;
+        var msgDave = m.message?.extendedTextMessage?.contextInfo?.quotedMessage || null;
 
         var budy = typeof m.text == "string" ? m.text : "";
 
@@ -104,8 +104,8 @@ module.exports = dave = async (client, m, chatUpdate, store) => {
         const mime = (quoted.msg || quoted).mimetype || "";
         const qmsg = (quoted.msg || quoted);
 
-        const DevToxic = Array.isArray(sudoUsers) ? sudoUsers : [];
-        const Owner = DevToxic.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender);
+        const DevDave = Array.isArray(sudoUsers) ? sudoUsers : [];
+        const Owner = DevDave.map((v) => v.replace(/[^0-9]/g, "") + "@s.whatsapp.net").includes(m.sender);
 
         const groupMetadata = m.isGroup ? m.metadata : "";
         const groupName = m.isGroup && groupMetadata ? groupMetadata.subject : "";
@@ -117,7 +117,7 @@ module.exports = dave = async (client, m, chatUpdate, store) => {
 
         const context = {
             client, m, text, Owner, chatUpdate, store, isBotAdmin, isAdmin, IsGroup, participants,
-            pushname, body, budy, totalCommands, args, mime, qmsg, msgToxic, botNumber, itsMe,
+            pushname, body, budy, totalCommands, args, mime, qmsg, msgDave, botNumber, itsMe,
             packname, generateProfilePicture, groupMetadata, davespeed, mycode,
             fetchJson, exec, getRandom, UploadFileUgu, TelegraPh, prefix, cmd, botname, mode, gcpresence, antitag, antidelete: antideleteSetting, fetchBuffer, store, uploadtoimgur, chatUpdate,
             getGroupAdmins: () => participants.filter(p => p.admin !== null).map(p => p.jid), pict, Tag

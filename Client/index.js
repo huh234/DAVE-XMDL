@@ -46,12 +46,12 @@ const connectionHandler = require('../Handler/connectionHandler');
 const antidelete = require('../Functions/antidelete');
 const antilink = require('../Functions/antilink');
 
-async function startToxic() {
+async function startDave() {
     let settingss = await getSettings();
     if (!settingss) {
         console.log(
             `◈━━━━━━━━━━━━━━━━◈\n` +
-            `│❒ TOXIC-MD FAILED TO CONNECT 😵\n` +
+            `│❒ DAVE-XD FAILED TO CONNECT 😵\n` +
             `│❒ Settings not found, check your database! 🖕\n` +
             `┗━━━━━━━━━━━━━━━┛`
         );
@@ -255,7 +255,7 @@ async function startToxic() {
     });
 
     client.ev.on("connection.update", async (update) => {
-        await connectionHandler(client, update, startToxic);
+        await connectionHandler(client, update, startDave);
     });
 
     client.ev.on("creds.update", saveCreds);
@@ -297,9 +297,9 @@ app.get("/", (req, res) => {
 
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`));
 
-startToxic();
+startDave();
 
-module.exports = startToxic;
+module.exports = startDave;
 
 let file = require.resolve(__filename);
 fs.watchFile(file, () => {

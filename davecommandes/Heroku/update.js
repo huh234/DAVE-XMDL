@@ -13,7 +13,7 @@ module.exports = async (context) => {
         global.updateInProgress = true;
 
         try {
-            await m.reply("💣 *Toxic-v2 Update Unleashed!* Scanning GitHub for fresh chaos... 😈");
+            await m.reply("💣 *Dave-v2 Update Unleashed!* Scanning GitHub for fresh chaos... 😈");
 
             // Paths
             const lastCommitPath = path.join(__dirname, "../../last_commit.txt");
@@ -28,9 +28,9 @@ module.exports = async (context) => {
 
             // 1. Check latest commit SHA
             console.log("Fetching latest commit...");
-            const repoUrl = "https://api.github.com/repos/xhclintohn/Toxic-v2/commits/main";
+            const repoUrl = "https://api.github.com/repos/xhclintohn/Dave-v2/commits/main";
             const { data: commitData } = await axios.get(repoUrl, {
-                headers: { "User-Agent": "Toxic-v2-Bot" }
+                headers: { "User-Agent": "Dave-v2-Bot" }
             }).catch(err => {
                 throw new Error(`GitHub API error: ${err.response?.status || err.message}`);
             });
@@ -45,14 +45,14 @@ module.exports = async (context) => {
             console.log(`Current SHA: ${currentSha}`);
 
             if (latestSha === currentSha) {
-                return await m.reply("🛡️ *No updates, loser!* Toxic-v2 is already peak chaos. 🔥");
+                return await m.reply("🛡️ *No updates, loser!* Dave-v2 is already peak chaos. 🔥");
             }
 
             await m.reply("⚡ *New commits detected!* Downloading the mayhem...");
 
             // 3. Download ZIP
             console.log("Downloading ZIP...");
-            const { data: zipData } = await axios.get("https://github.com/xhclintohn/Toxic-v2/archive/main.zip", {
+            const { data: zipData } = await axios.get("https://github.com/xhclintohn/Dave-v2/archive/main.zip", {
                 responseType: "arraybuffer"
             }).catch(err => {
                 throw new Error(`Download failed: ${err.message}`);
@@ -70,7 +70,7 @@ module.exports = async (context) => {
 
             // 5. Copy files, preserving specific files
             await m.reply("🔄 *Replacing files, keeping your precious configs safe...*");
-            const sourcePath = path.join(extractPath, "Toxic-v2");
+            const sourcePath = path.join(extractPath, "Dave-v2");
             copyFolderSync(sourcePath, botRoot);
 
             // 6. Save new SHA
@@ -83,7 +83,7 @@ module.exports = async (context) => {
             fs.rmSync(extractPath, { recursive: true, force: true });
 
             await m.reply(
-                "😈 *Toxic-v2 updated! Dyno restarting in 3 seconds...* ⚠️ *Warning*: Heroku updates are temporary unless you push to git. Check logs for manual steps! 🔥"
+                "😈 *Dave-v2 updated! Dyno restarting in 3 seconds...* ⚠️ *Warning*: Heroku updates are temporary unless you push to git. Check logs for manual steps! 🔥"
             );
 
             // 8. Heroku dyno restart
