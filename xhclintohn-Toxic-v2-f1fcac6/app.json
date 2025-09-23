@@ -1,0 +1,42 @@
+{
+  "name": "Toxic-MD",
+  "description": "⚡ A lightning-fast WhatsApp bot with multi-device support, built on Node.js & Baileys.",
+  "website": "https://github.com/xhclintohn/Toxic-v2#readme",
+  "repository": "https://github.com/xhclintohn/Toxic-v2.git",
+  "logo": "https://i.ibb.co/mChCjFPL/ad76194e124ff34e.jpg",
+  "success_url": "/",
+  
+  "env": {
+    "SESSION": {
+      "description": "🔑 *Required* – Your WhatsApp session ID (generated after linking the bot).",
+      "required": true
+    },
+    "CODE": {
+      "description": "🌍 *Required* – Default country code (e.g., 254 for Kenya).",
+      "value": "254",
+      "required": true
+    }
+  },
+  
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "description": "🗃️ Free PostgreSQL database for storing bot data."
+    }
+  ],
+  
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs",
+      "description": "📦 Node.js runtime for running the bot."
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git",
+      "description": "🖼️ WebP support for image processing."
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest",
+      "description": "🎥 FFmpeg for audio/video processing."
+    }
+  ]
+}
