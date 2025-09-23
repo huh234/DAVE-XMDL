@@ -64,14 +64,14 @@ async function startToxic() {
     const client = toxicConnect({
         logger: pino({ level: "silent" }),
         printQRInTerminal: true,
-        browser: ["Toxic-MD", "Chrome", "1.0.0"],
+        browser: ["DAVE-XD", "Chrome", "1.0.0"],
         auth: state,
         getMessage: async (key) => {
             if (store) {
                 const msg = await store.loadMessage(key.remoteJid, key.id);
                 return msg.message || undefined;
             }
-            return { conversation: "Toxic-MD whatsapp user bot" };
+            return { conversation: "DAVE-XD whatsapp user bot" };
         },
         version: [2, 3000, 1023223821],
         fireInitQueries: false,
@@ -137,11 +137,11 @@ async function startToxic() {
         const Myself = client.decodeJid(client.user.id);
 
         if (typeof antidelete !== 'function') {
-            console.error('Toxic-MD Error: antidelete is not a function');
+            console.error('DAVE-XD Error: antidelete is not a function');
             return;
         }
         if (typeof antilink !== 'function') {
-            console.error('Toxic-MD Error: antilink is not a function');
+            console.error('DAVE-XD Error: antilink is not a function');
             return;
         }
 

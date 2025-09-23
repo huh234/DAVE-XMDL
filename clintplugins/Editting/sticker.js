@@ -33,13 +33,13 @@ module.exports = async (context) => {
                 }
 
                 const tempFile = path.join(__dirname, `temp-sticker-${Date.now()}.${/image/.test(mime) ? 'jpg' : 'mp4'}`);
-                await m.reply('◈━━━━━━━━━━━━━━━━◈\n❒ A moment, Toxic-MD is creating the sticker...\n◈━━━━━━━━━━━━━━━━◈');
+                await m.reply('◈━━━━━━━━━━━━━━━━◈\n❒ A moment, DAVE-XD is creating the sticker...\n◈━━━━━━━━━━━━━━━━◈');
 
                 const media = await client.downloadAndSaveMediaMessage(m.quoted, tempFile);
 
                 const stickerResult = new Sticker(media, {
-                    pack: packname || 'Toxic-MD Pack',
-                    author: author || 'Toxic-MD',
+                    pack: packname || 'DAVE-XD Pack',
+                    author: author || 'DAVE-XD',
                     type: StickerTypes.FULL,
                     categories: ['🤩', '🎉'],
                     id: '12345',

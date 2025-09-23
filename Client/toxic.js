@@ -29,7 +29,7 @@ module.exports = toxic = async (client, m, chatUpdate, store) => {
 
         let settings = await getSettings();
         if (!settings) {
-            console.error("Toxic-MD: Settings not found, cannot proceed!");
+            console.error("DAVE-XD: Settings not found, cannot proceed!");
             return;
         }
 
@@ -79,17 +79,17 @@ module.exports = toxic = async (client, m, chatUpdate, store) => {
         // Updated group metadata handling with debug logging
         try {
             m.isGroup = m.chat.endsWith("g.us");
-            console.log(`Toxic-MD: Processing message in ${m.isGroup ? 'group' : 'private'} chat: ${m.chat}`);
+            console.log(`DAVE-XD: Processing message in ${m.isGroup ? 'group' : 'private'} chat: ${m.chat}`);
             m.metadata = m.isGroup ? await client.groupMetadata(m.chat).catch(e => {
-                console.error("Toxic-MD: Group metadata fetch error:", e);
+                console.error("DAVE-XD: Group metadata fetch error:", e);
                 return {};
             }) : {};
             const participants = m.metadata?.participants || [];
             m.isAdmin = Boolean(participants.find(p => p.admin !== null && p.jid === m.sender));
             m.isBotAdmin = Boolean(participants.find(p => p.admin !== null && p.jid === botNumber));
-            console.log(`Toxic-MD: isAdmin: ${m.isAdmin}, isBotAdmin: ${m.isBotAdmin} for sender: ${m.sender}`);
+            console.log(`DAVE-XD: isAdmin: ${m.isAdmin}, isBotAdmin: ${m.isBotAdmin} for sender: ${m.sender}`);
         } catch (error) {
-            console.error("Toxic-MD: Error fetching group metadata:", error);
+            console.error("DAVE-XD: Error fetching group metadata:", error);
             m.metadata = {};
             m.isAdmin = false;
             m.isBotAdmin = false;
@@ -125,7 +125,7 @@ module.exports = toxic = async (client, m, chatUpdate, store) => {
 
         // Debug command receipt
         if (cmd) {
-            console.log(`Toxic-MD: Command received: ${resolvedCommandName} in ${m.isGroup ? 'group' : 'private'} chat from ${m.sender}`);
+            console.log(`DAVE-XD: Command received: ${resolvedCommandName} in ${m.isGroup ? 'group' : 'private'} chat from ${m.sender}`);
             const senderNumber = m.sender.replace(/@s\.whatsapp\.net$/, '');
             if (bannedUsers.includes(senderNumber)) {
                 await client.sendMessage(m.chat, { text: `◈━━━━━━━━━━━━━━━━◈\n│❒ Banned, huh? You're too pathetic to use my commands. Get lost! 💀` }, { quoted: m });
@@ -135,7 +135,7 @@ module.exports = toxic = async (client, m, chatUpdate, store) => {
 
         // Relax mode check to allow group messages
         if (cmd && mode === 'private' && !itsMe && !Owner && !sudoUsers.includes(m.sender)) {
-            console.log(`Toxic-MD: Private mode active, skipping non-owner/non-sudo command from ${m.sender}`);
+            console.log(`DAVE-XD: Private mode active, skipping non-owner/non-sudo command from ${m.sender}`);
             return;
         }
 
@@ -150,13 +150,13 @@ module.exports = toxic = async (client, m, chatUpdate, store) => {
 
         if (cmd) {
             await commands[resolvedCommandName](context);
-            console.log(`Toxic-MD: Executed command: ${resolvedCommandName}`);
+            console.log(`DAVE-XD: Executed command: ${resolvedCommandName}`);
         }
 
-        console.log(`◈━━━━━━━━━━━━━━━━◈\n│❒ Bot successfully connected to WhatsApp ✅💫\n│❒ Loaded ${totalCommands} plugins. Toxic-MD is ready to dominate! 😈\n┗━━━━━━━━━━━━━━━┛`);
+        console.log(`◈━━━━━━━━━━━━━━━━◈\n│❒ Bot successfully connected to WhatsApp ✅💫\n│❒ Loaded ${totalCommands} plugins. DAVE-XD is ready to dominate! 😈\n┗━━━━━━━━━━━━━━━┛`);
 
     } catch (err) {
-        console.error('Toxic-MD Error:', util.format(err));
+        console.error('DAVE-XD Error:', util.format(err));
     }
 
     process.on('uncaughtException', function (err) {
@@ -168,6 +168,6 @@ module.exports = toxic = async (client, m, chatUpdate, store) => {
         if (e.includes("Connection Closed")) return;
         if (e.includes("Timed Out")) return;
         if (e.includes("Value not found")) return;
-        console.error('Toxic-MD Caught exception:', err);
+        console.error('DAVE-XD Caught exception:', err);
     });
 };

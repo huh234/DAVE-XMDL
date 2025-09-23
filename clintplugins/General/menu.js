@@ -6,7 +6,7 @@ const { getSettings } = require('../../Database/config');
 module.exports = {
   name: 'menu',
   aliases: ['help', 'commands', 'list'],
-  description: 'Displays the Toxic-MD command menu with interactive buttons',
+  description: 'Displays the DAVE-XD command menu with interactive buttons',
   run: async (context) => {
     const { client, m, mode, pict, botname, text, prefix } = context;
 
@@ -18,13 +18,13 @@ module.exports = {
         },
         { quoted: m, ad: true }
       );
-      console.log(`Toxic-MD: Rejected menu with text: ${text}`);
+      console.log(`DAVE-XD: Rejected menu with text: ${text}`);
       return;
     }
 
     const settings = await getSettings();
     const effectivePrefix = settings.prefix || '.'; // Dynamic prefix from database
-    console.log(`Toxic-MD: Generating menu with prefix: ${effectivePrefix}`);
+    console.log(`DAVE-XD: Generating menu with prefix: ${effectivePrefix}`);
 
     // Fancy font converter
     const toFancyFont = (text, isUpperCase = false) => {
@@ -40,7 +40,7 @@ module.exports = {
         .join('');
     };
 
-    // Menu text with Toxic-MD flair
+    // Menu text with DAVE-XD flair
     const menuText = `◈━━━━━━━━━━━━━━━━◈\n│❒ *Welcome to ${botname}, B*tches!* 😈\n\n` +
       `🤖 *Bσƚ*: ${botname} (bow down)\n` +
       `🔣 *Pɾҽϝιx*: ${effectivePrefix} (learn it, dumbass)\n` +
@@ -61,7 +61,7 @@ module.exports = {
               fileLength: '1435',
               pageCount: 0,
               mediaKey: 'MWO6fI223TY8T0i9onNcwNBBPldWfwp1j1FPKCiJFzw=',
-              fileName: 'Toxic-MD',
+              fileName: 'DAVE-XD',
               fileEncSha256: 'ZS8v9tio2un1yWVOOG3lwBxiP+mNgaKPY9+wl5pEoi8=',
               directPath: '/v/t62.7119-24/539012045_745537058346694_1512031191239726227_n.enc?ccb=11-4&oh=01_Q5Aa2QGGiJj--6eHxoTTTTzuWtBgCrkcXBz9hN_y2s_Z1lrABA&oe=68D7901C&_nc_sid=5e03e0',
               mediaKeyTimestamp: '1756370084',
@@ -77,8 +77,8 @@ module.exports = {
                 name: 'cta_url',
                 buttonParamsJson: JSON.stringify({
                   display_text: 'GitHub Repo',
-                  url: 'https://github.com/xhclintohn/Toxic-MD',
-                  merchant_url: 'https://github.com/xhclintohn/Toxic-MD',
+                  url: 'https://github.com/xhclintohn/DAVE-XD',
+                  merchant_url: 'https://github.com/xhclintohn/DAVE-XD',
                 }),
               },
               {
@@ -88,7 +88,7 @@ module.exports = {
                   sections: [
                     {
                       title: '🔥 CORE COMMANDS',
-                      highlight_label: '© Toxic-MD',
+                      highlight_label: '© DAVE-XD',
                       rows: [
                         { title: '📜 FULL MENU', description: 'Show all commands', id: `${effectivePrefix}fullmenu` },
                         { title: '⚠️ DEV', description: "Send developer's contact", id: `${effectivePrefix}dev` },
@@ -96,7 +96,7 @@ module.exports = {
                     },
                     {
                       title: 'ℹ BOT INFO',
-                      highlight_label: '© Toxic-MD',
+                      highlight_label: '© DAVE-XD',
                       rows: [
                         { title: '🔥 PING', description: 'Check bot speed', id: `${effectivePrefix}ping` },
                         { title: '💯 REPO', description: 'Get bot repository', id: `${effectivePrefix}repo` },
@@ -108,8 +108,8 @@ module.exports = {
             ],
             messageParamsJson: JSON.stringify({
               limited_time_offer: {
-                text: 'Toxic-MD',
-                url: 'https://github.com/xhclintohn/Toxic-MD',
+                text: 'DAVE-XD',
+                url: 'https://github.com/xhclintohn/DAVE-XD',
                 copy_code: 'TOXIC',
                 expiration_time: Date.now() * 1000,
               },
@@ -117,7 +117,7 @@ module.exports = {
                 in_thread_buttons_limit: 2,
                 divider_indices: [1, 2],
                 list_title: 'Select Command',
-                button_title: 'Toxic-MD',
+                button_title: 'DAVE-XD',
               },
             }),
           },
@@ -128,7 +128,7 @@ module.exports = {
               mediaType: 1,
               thumbnail: pict,
               mediaUrl: '',
-              sourceUrl: 'https://github.com/xhclintohn/Toxic-MD',
+              sourceUrl: 'https://github.com/xhclintohn/DAVE-XD',
               showAdAttribution: false,
               renderLargerThumbnail: true,
             },
@@ -139,7 +139,7 @@ module.exports = {
     );
 
     await client.relayMessage(m.chat, msg.message, { messageId: msg.key.id });
-    console.log(`Toxic-MD: Sent interactive menu to ${m.chat} with prefix ${effectivePrefix}`);
+    console.log(`DAVE-XD: Sent interactive menu to ${m.chat} with prefix ${effectivePrefix}`);
 
     // Audio message logic
     const possibleAudioPaths = [
@@ -167,7 +167,7 @@ module.exports = {
         },
         { quoted: m }
       );
-      console.log(`Toxic-MD: Sent menu audio to ${m.chat}`);
+      console.log(`DAVE-XD: Sent menu audio to ${m.chat}`);
     }
   },
 };

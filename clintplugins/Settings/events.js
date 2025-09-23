@@ -30,7 +30,7 @@ module.exports = async (context) => {
 
       const value = args[0]?.toLowerCase();
       let groupSettings = await getGroupSettings(jid);
-      console.log('Toxic-MD: Group settings for', jid, ':', groupSettings);
+      console.log('DAVE-XD: Group settings for', jid, ':', groupSettings);
       let isEnabled = groupSettings?.events === true || groupSettings?.events === 'true';
 
       if (value === 'on' || value === 'off') {
@@ -78,7 +78,7 @@ module.exports = async (context) => {
         { quoted: m, ad: true }
       );
     } catch (error) {
-      console.error('Toxic-MD: Error in events.js:', error.stack);
+      console.error('DAVE-XD: Error in events.js:', error.stack);
       await client.sendMessage(
         m.chat,
         {

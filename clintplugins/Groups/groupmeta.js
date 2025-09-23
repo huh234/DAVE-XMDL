@@ -18,11 +18,11 @@ module.exports = async (context) => {
                     await m.reply(`◈━━━━━━━━━━━━━━━━◈\n❒ Group name slammed to "${newText}"! Let’s keep the chaos going! 😈\n◈━━━━━━━━━━━━━━━━◈`, {
                         contextInfo: {
                             externalAdReply: {
-                                title: `Toxic-MD`,
+                                title: `DAVE-XD`,
                                 body: `Group Update`,
                                 previewType: "PHOTO",
                                 thumbnail: pict,
-                                sourceUrl: 'https://github.com/xhclintohn/Toxic-MD'
+                                sourceUrl: 'https://github.com/xhclintohn/DAVE-XD'
                             }
                         }
                     });
@@ -40,11 +40,11 @@ module.exports = async (context) => {
                     await m.reply('◈━━━━━━━━━━━━━━━━◈\n❒ Group description updated! Time to flex that new vibe! 🔥\n◈━━━━━━━━━━━━━━━━◈', {
                         contextInfo: {
                             externalAdReply: {
-                                title: `Toxic-MD`,
+                                title: `DAVE-XD`,
                                 body: `Group Update`,
                                 previewType: "PHOTO",
                                 thumbnail: pict,
-                                sourceUrl: 'https://github.com/xhclintohn/Toxic-MD'
+                                sourceUrl: 'https://github.com/xhclintohn/DAVE-XD'
                             }
                         }
                     });
@@ -64,11 +64,11 @@ module.exports = async (context) => {
                     await m.reply(`◈━━━━━━━━━━━━━━━━◈\n❒ Group editing is now ${restrict ? 'locked to admins only' : 'open to all members'}! Keep it toxic! 😎\n◈━━━━━━━━━━━━━━━━◈`, {
                         contextInfo: {
                             externalAdReply: {
-                                title: `Toxic-MD`,
+                                title: `DAVE-XD`,
                                 body: `Group Update`,
                                 previewType: "PHOTO",
                                 thumbnail: pict,
-                                sourceUrl: 'https://github.com/xhclintohn/Toxic-MD'
+                                sourceUrl: 'https://github.com/xhclintohn/DAVE-XD'
                             }
                         }
                     });

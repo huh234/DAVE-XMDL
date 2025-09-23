@@ -14,7 +14,7 @@ module.exports = {
       // Validate m.sender
       if (!m.sender || typeof m.sender !== 'string' || !m.sender.includes('@s.whatsapp.net')) {
         console.error(`Invalid m.sender: ${JSON.stringify(m.sender)}`);
-        return m.reply(`◈━━━━━━━━━━━━━━━━◈\nShit’s broken, can’t read your number! Try again, you dumbass.\nCheck https://github.com/xhclintohn/Toxic-MD for help.\n◈━━━━━━━━━━━━━━━━◈`);
+        return m.reply(`◈━━━━━━━━━━━━━━━━◈\nShit’s broken, can’t read your number! Try again, you dumbass.\nCheck https://github.com/xhclintohn/DAVE-XD for help.\n◈━━━━━━━━━━━━━━━━◈`);
       }
 
       const userNumber = m.sender.split('@')[0];
@@ -77,7 +77,7 @@ module.exports = {
 
     } catch (error) {
       console.error(`Del command fucked up: ${error.stack}`);
-      await m.reply(`◈━━━━━━━━━━━━━━━━◈\nShit broke, @${m.sender.split('@')[0]}! Couldn’t delete the message. Try again, you useless fuck.\nCheck https://github.com/xhclintohn/Toxic-MD for help.\n◈━━━━━━━━━━━━━━━━◈`, {
+      await m.reply(`◈━━━━━━━━━━━━━━━━◈\nShit broke, @${m.sender.split('@')[0]}! Couldn’t delete the message. Try again, you useless fuck.\nCheck https://github.com/xhclintohn/DAVE-XD for help.\n◈━━━━━━━━━━━━━━━━◈`, {
         mentions: [m.sender]
       });
     }

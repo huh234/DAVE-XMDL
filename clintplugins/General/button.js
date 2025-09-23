@@ -10,7 +10,7 @@ module.exports = {
     try {
       await client.sendMessage(m.chat, {
         text: 'Choose an option from the list:',
-        footer: 'Toxic-MD Bot',
+        footer: 'DAVE-XD Bot',
         sections: [
           {
             title: 'General Commands',

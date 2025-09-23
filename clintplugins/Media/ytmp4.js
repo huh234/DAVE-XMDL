@@ -69,7 +69,7 @@ module.exports = async (context) => {
         contextInfo: {
           externalAdReply: {
             title: "YouTube Video",
-            body: "Quality: 360p | Powered by Toxic-MD",
+            body: "Quality: 360p | Powered by DAVE-XD",
             thumbnailUrl,
             sourceUrl: text,
             mediaType: 2,

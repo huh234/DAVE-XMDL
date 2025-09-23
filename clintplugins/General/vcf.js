@@ -18,7 +18,7 @@ module.exports = async (context) => {
 
         const cont = './contacts.vcf';
 
-        await m.reply(`◈━━━━━━━━━━━━━━━━◈\n❒ A moment, Toxic-MD is compiling ${gcdata.participants.length} contacts into a VCF...\n◈━━━━━━━━━━━━━━━━◈`);
+        await m.reply(`◈━━━━━━━━━━━━━━━━◈\n❒ A moment, DAVE-XD is compiling ${gcdata.participants.length} contacts into a VCF...\n◈━━━━━━━━━━━━━━━━◈`);
 
         await fs.promises.writeFile(cont, vcard);
         await m.reply('◈━━━━━━━━━━━━━━━━◈\n❒ Import this VCF in a separate email account to avoid messing with your contacts...\n◈━━━━━━━━━━━━━━━━◈');

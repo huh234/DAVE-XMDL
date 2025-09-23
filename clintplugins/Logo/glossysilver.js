@@ -17,7 +17,7 @@ module.exports = async (context) => {
     if (data && data.success && data.result && data.result.image_url) {
       const caption = `◈━━━━━━━━━━━━━━━━◈\n│❒ Here’s your damn *Glossy Silver* logo, ${m.pushName}! Don’t waste my time again, you shiny prick! 😤\n` +
                      `📸 *Text*: ${cleanedText}\n` +
-                     `🔗 *Source*: Even Toxic-MD’s magic, bitches!\n` +
+                     `🔗 *Source*: Even DAVE-XD’s magic, bitches!\n` +
                      `◈━━━━━━━━━━━━━━━━◈\nPowered by *${botname}*`;
 
       await client.sendMessage(m.chat, { 

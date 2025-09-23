@@ -103,12 +103,12 @@ function smsg(conn, m, store) {
         text: text,
         contextInfo: {
           externalAdReply: {
-            title: `Toxic-MD`,
+            title: `DAVE-XD`,
             body: m.pushName,
             previewType: "PHOTO",
             thumbnailUrl: 'https://i.ibb.co/7JcYBD5Y/cbb9f804644ae8c4.jpg', 
             thumbnail: kali, 
-            sourceUrl: 'https://github.com/xhclintohn/Toxic-MD'
+            sourceUrl: 'https://github.com/xhclintohn/DAVE-XD'
           }
         }
       }, 

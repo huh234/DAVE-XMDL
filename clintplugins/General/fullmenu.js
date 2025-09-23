@@ -100,10 +100,10 @@ module.exports = {
       contextInfo: {
         externalAdReply: {
           showAdAttribution: false,
-          title: `Toxic-MD WA bot`,
+          title: `DAVE-XD WA bot`,
           body: `Pσɯҽɾҽԃ Ⴆყ Tσxιƈ-MD`,
           thumbnail: pict,
-          sourceUrl: `https://github.com/xhclintohn/Toxic-MD`,
+          sourceUrl: `https://github.com/xhclintohn/DAVE-XD`,
           mediaType: 1,
           renderLargerThumbnail: true
         }

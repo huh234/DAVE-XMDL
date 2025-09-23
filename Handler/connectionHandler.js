@@ -4,7 +4,7 @@ const { default: toxicConnect, DisconnectReason } = require("@whiskeysockets/bai
 const { getSettings, getSudoUsers, addSudoUser } = require("../Database/config");
 const { commands, totalCommands } = require("../Handler/commandHandler");
 
-const botName = process.env.BOTNAME || "Toxic-MD";
+const botName = process.env.BOTNAME || "DAVE-XD";
 let hasSentStartMessage = false;
 
 async function connectionHandler(socket, connectionUpdate, reconnect) {
@@ -154,7 +154,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
               showAdAttribution: false,
               title: botName,
               body: `Bot initialized successfully.`,
-              sourceUrl: `https://github.com/xhclintohn/Toxic-MD`,
+              sourceUrl: `https://github.com/xhclintohn/DAVE-XD`,
               mediaType: 1,
               renderLargerThumbnail: true
             }
@@ -183,7 +183,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
               showAdAttribution: false,
               title: botName,
               body: `Select an option to proceed.`,
-              sourceUrl: `https://github.com/xhclintohn/Toxic-MD`,
+              sourceUrl: `https://github.com/xhclintohn/DAVE-XD`,
               mediaType: 1,
               renderLargerThumbnail: true
             }
@@ -199,7 +199,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
     console.log(
       `◈━━━━━━━━━━━━━━━━◈\n` +
       `│❒ Bot successfully connected to WhatsApp ✅💫\n` +
-      `│❒ Loaded ${totalCommands} plugins. Toxic-MD is ready to dominate! 😈\n` +
+      `│❒ Loaded ${totalCommands} plugins. DAVE-XD is ready to dominate! 😈\n` +
       `┗━━━━━━━━━━━━━━━┛`
     );
   }

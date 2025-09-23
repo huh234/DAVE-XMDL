@@ -98,7 +98,7 @@ module.exports = async (context) => {
         contextInfo: {
           externalAdReply: {
             title: apiData.result.title || video.title,
-            body: `${video.author.name || "Unknown Artist"} | Powered by Toxic-MD`,
+            body: `${video.author.name || "Unknown Artist"} | Powered by DAVE-XD`,
             thumbnailUrl: apiData.result.thumbnail || video.thumbnail || "https://via.placeholder.com/120x90",
             sourceUrl: video.url,
             mediaType: 1,

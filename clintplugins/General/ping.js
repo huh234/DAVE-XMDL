@@ -12,19 +12,19 @@ module.exports = {
       // Validate m.sender
       if (!m.sender || typeof m.sender !== 'string' || !m.sender.includes('@s.whatsapp.net')) {
         console.error(`Invalid m.sender: ${JSON.stringify(m.sender)}`);
-        return m.reply(`◎━━━━━━━━━━━━━━━━◎\n│❒ Can't read your number, genius! Try again.\nCheck https://github.com/xhclintohn/Toxic-MD\n◎━━━━━━━━━━━━━━━━◎`);
+        return m.reply(`◎━━━━━━━━━━━━━━━━◎\n│❒ Can't read your number, genius! Try again.\nCheck https://github.com/xhclintohn/DAVE-XD\n◎━━━━━━━━━━━━━━━━◎`);
       }
 
       // Validate toxicspeed
       if (typeof toxicspeed !== 'number' || isNaN(toxicspeed)) {
         console.error(`Invalid toxicspeed: ${toxicspeed}`);
-        return m.reply(`◎━━━━━━━━━━━━━━━━◎\n│❒ Ping's broken, @${m.sender.split('@')[0]}! Speed data's fucked.\nCheck https://github.com/xhclintohn/Toxic-MD\n◎━━━━━━━━━━━━━━━━◎`, { mentions: [m.sender] });
+        return m.reply(`◎━━━━━━━━━━━━━━━━◎\n│❒ Ping's broken, @${m.sender.split('@')[0]}! Speed data's fucked.\nCheck https://github.com/xhclintohn/DAVE-XD\n◎━━━━━━━━━━━━━━━━◎`, { mentions: [m.sender] });
       }
 
       // Retrieve settings to get the current prefix
       const settings = await getSettings();
       if (!settings) {
-        return m.reply(`◎━━━━━━━━━━━━━━━━◎\n│❒ Error: Couldn't load settings, you dumb fuck.\nCheck https://github.com/xhclintohn/Toxic-MD\n◎━━━━━━━━━━━━━━━━◎`);
+        return m.reply(`◎━━━━━━━━━━━━━━━━◎\n│❒ Error: Couldn't load settings, you dumb fuck.\nCheck https://github.com/xhclintohn/DAVE-XD\n◎━━━━━━━━━━━━━━━━◎`);
       }
 
       const toFancyFont = (text, isUpperCase = false) => {
@@ -58,7 +58,7 @@ module.exports = {
       const userNumber = m.sender.split('@')[0];
       const pingTime = toxicspeed.toFixed(4);
       const uptimeText = formatUptime(process.uptime());
-      const botName = 'Toxic-MD';
+      const botName = 'DAVE-XD';
       const replyText = `
 ◎━━━━━━━━━━━━━━━━◎
 │❒ *Pong, @${m.pushName}!* 🏓
@@ -73,7 +73,7 @@ module.exports = {
 
 I'm running like a damn beast! 😈
 
-> Pσɯҽɾҽԃ Ⴆყ Toxic-MD
+> Pσɯҽɾҽԃ Ⴆყ DAVE-XD
 ◎━━━━━━━━━━━━━━━━◎
       `;
 
@@ -86,7 +86,7 @@ I'm running like a damn beast! 😈
             title: `${toFancyFont(botName)}`,
             body: `Yo, ${m.pushName}! Don't waste my time.`,
             thumbnail: context.pict,
-            sourceUrl: `https://github.com/xhclintohn/Toxic-MD`,
+            sourceUrl: `https://github.com/xhclintohn/DAVE-XD`,
             mediaType: 1,
             renderLargerThumbnail: true
           }
@@ -104,7 +104,7 @@ I'm running like a damn beast! 😈
     } catch (error) {
       console.error(`Ping command fucked up: ${error.stack}`);
       await client.sendMessage(m.chat, {
-        text: `◎━━━━━━━━━━━━━━━━◎\n│❒ Ping's fucked, @${m.sender.split('@')[0]}! Try again, you slacker.\nCheck https://github.com/xhclintohn/Toxic-MD\n◎━━━━━━━━━━━━━━━━◎`,
+        text: `◎━━━━━━━━━━━━━━━━◎\n│❒ Ping's fucked, @${m.sender.split('@')[0]}! Try again, you slacker.\nCheck https://github.com/xhclintohn/DAVE-XD\n◎━━━━━━━━━━━━━━━━◎`,
         mentions: [m.sender]
       }, { quoted: m });
     }

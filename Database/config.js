@@ -43,7 +43,7 @@ async function initializeDatabase() {
 
         const defaultSettings = {
             prefix: '.',
-            packname: 'Toxic-MD',
+            packname: 'DAVE-XD',
             mode: 'private',
             presence: 'online',
             autoview: 'true',

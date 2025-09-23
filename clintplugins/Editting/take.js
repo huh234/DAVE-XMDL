@@ -36,13 +36,13 @@ module.exports = async (context) => {
                 }
 
                 const tempFile = path.join(__dirname, `temp-watermark-${Date.now()}.${/image\/webp/.test(mime) ? 'webp' : /image/.test(mime) ? 'jpg' : 'mp4'}`);
-                await m.reply('◈━━━━━━━━━━━━━━━━◈\n❒ A moment, Toxic-MD is creating the sticker...\n◈━━━━━━━━━━━━━━━━◈');
+                await m.reply('◈━━━━━━━━━━━━━━━━◈\n❒ A moment, DAVE-XD is creating the sticker...\n◈━━━━━━━━━━━━━━━━◈');
 
                 const media = await client.downloadAndSaveMediaMessage(m.quoted, tempFile);
 
                 const stickerResult = new Sticker(media, {
                     pack: pushname || 'ᅠᅠᅠᅠ',
-                    author: pushname || '𝐱𝐡_𝐜𝐥𝐢𝐧𝐭𝐨𝐧',
+                    author: pushname || 'gift_dave',
                     type: StickerTypes.FULL,
                     categories: ['🤩', '🎉'],
                     id: '12345',

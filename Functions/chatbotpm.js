@@ -57,7 +57,7 @@ module.exports = async (client, m, store, chatbotpmSetting) => {
                 { quoted: m }
             );
         } catch (e) {
-            console.error(`Toxic-MD ChatbotPM Error:`, e);
+            console.error(`DAVE-XD ChatbotPM Error:`, e);
             await client.sendMessage(
                 m.key.remoteJid,
                 { text: `◈━━━━━━━━━━━━━━━━◈\n│❒ Oops, something went wrong with the chatbot, you dumbass! 😈 Try again later!\n┗━━━━━━━━━━━━━━━┛` },
@@ -65,6 +65,6 @@ module.exports = async (client, m, store, chatbotpmSetting) => {
             );
         }
     } catch (e) {
-        console.error("Toxic-MD ChatbotPM Error:", e);
+        console.error("DAVE-XD ChatbotPM Error:", e);
     }
 };

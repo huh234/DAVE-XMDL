@@ -37,7 +37,7 @@ module.exports = async (context) => {
                   (thumbnail ? `│🖼 *Thumbnail*: ${thumbnail}\n` : '') +
                   `│🔗 *Video*: ${videoUrl}\n` +
                   `◈━━━━━━━━━━━━━━━━◈\n` +
-                  `Powered by Toxic-MD`;
+                  `Powered by DAVE-XD`;
 
   await m.reply(formatStylishReply(response));
 };

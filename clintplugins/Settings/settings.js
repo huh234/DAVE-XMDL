@@ -6,7 +6,7 @@ module.exports = async (context) => {
     const { client, m, prefix } = context;
 
     const settings = await getSettings();
-    const botName = process.env.BOTNAME || settings.botname || 'Toxic-MD';
+    const botName = process.env.BOTNAME || settings.botname || 'DAVE-XD';
     const sudoUsers = await getSudoUsers();
     const bannedUsers = await getBannedUsers();
     const groupCount = Object.keys(await client.groupFetchAllParticipating()).length;
@@ -32,7 +32,7 @@ module.exports = async (context) => {
     ];
 
     const message = formatStylishReply(
-      `*Toxic-MD Settings* 🔥\n\n` +
+      `*DAVE-XD Settings* 🔥\n\n` +
       `Botname: ${botName}\n` +
       `Prefix: ${settings.prefix || 'None'}\n` +
       `Antidelete: ${settings.antidelete ? '✅ ON' : '❌ OFF'}\n` +

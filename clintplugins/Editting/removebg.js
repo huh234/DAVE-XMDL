@@ -5,7 +5,7 @@ module.exports = async (context) => {
     const { client, m, mime, uploadtoimgur } = context;
 
     try {
-        const cap = 'By Toxic-MD';
+        const cap = 'By DAVE-XD';
 
         if (!m.quoted) {
             return m.reply('◈━━━━━━━━━━━━━━━━◈\n❒ Send the image then tag it with the command.\n◈━━━━━━━━━━━━━━━━◈');
@@ -18,7 +18,7 @@ module.exports = async (context) => {
         const tempFile = path.join(__dirname, `temp-${Date.now()}.jpg`);
         const fdr = await client.downloadAndSaveMediaMessage(m.quoted, tempFile);
 
-        await m.reply('◈━━━━━━━━━━━━━━━━◈\n❒ A moment, Toxic-MD is erasing the background...\n◈━━━━━━━━━━━━━━━━◈');
+        await m.reply('◈━━━━━━━━━━━━━━━━◈\n❒ A moment, DAVE-XD is erasing the background...\n◈━━━━━━━━━━━━━━━━◈');
 
         const fta = await uploadtoimgur(fdr);
         const image = `https://api.dreaded.site/api/removebg?imageurl=${fta}`;
