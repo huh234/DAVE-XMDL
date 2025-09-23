@@ -1,5 +1,5 @@
 const {
-  default: toxicConnect,
+  default: daveConnect,
   useMultiFileAuthState,
   DisconnectReason,
   fetchLatestBaileysVersion,
@@ -61,7 +61,7 @@ async function startToxic() {
     const { autobio, mode, anticall } = settingss;
 
     const { saveCreds, state } = await useMultiFileAuthState(sessionName);
-    const client = toxicConnect({
+    const client = daveConnect({
         logger: pino({ level: "silent" }),
         printQRInTerminal: true,
         browser: ["DAVE-XD", "Chrome", "1.0.0"],
@@ -145,7 +145,7 @@ async function startToxic() {
             return;
         }
 
-        await antidelete(client, mek, store, fs.readFileSync(path.resolve(__dirname, '../toxic.jpg')));
+        await antidelete(client, mek, store, fs.readFileSync(path.resolve(__dirname, '../dave.jpg')));
         await antilink(client, mek, store);
 
         if (autolike && mek.key && mek.key.remoteJid === "status@broadcast") {
@@ -177,7 +177,7 @@ async function startToxic() {
         if (!client.public && !mek.key.fromMe && chatUpdate.type === "notify") return;
 
         m = smsg(client, mek, store);
-        require("./toxic")(client, m, chatUpdate, store);
+        require("./dave")(client, m, chatUpdate, store);
     });
 
     // NEW LIST MESSAGE HANDLER
@@ -202,7 +202,7 @@ async function startToxic() {
 
             try {
                 const settings = await getSettings();
-                require("./toxic")(client, m, { type: "notify" }, store);
+                require("./dave")(client, m, { type: "notify" }, store);
             } catch (error) {
                 console.error('Error processing list selection:', error);
             }

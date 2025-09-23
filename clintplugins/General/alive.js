@@ -41,7 +41,7 @@ module.exports = async (context) => {
             throw new Error(`pict is some weird-ass type: ${typeof pict}`);
         }
 
-        // Send the image with toxic caption
+        // Send the image with dave caption
         await client.sendMessage(m.chat, {
             image: imageOptions,
             caption: caption,
@@ -58,7 +58,7 @@ module.exports = async (context) => {
             }
         }
 
-        // Audio file paths with extra toxicity
+        // Audio file paths with extra daveity
         const possibleAudioPaths = [
             path.join(__dirname, 'xh_clinton', 'test.mp3'),
             path.join(process.cwd(), 'xh_clinton', 'test.mp3'),

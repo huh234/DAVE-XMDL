@@ -22,7 +22,7 @@ const { botname, mycode } = require('../Env/settings');
 
 process.setMaxListeners(0);
 
-module.exports = toxic = async (client, m, chatUpdate, store) => {
+module.exports = dave = async (client, m, chatUpdate, store) => {
     try {
         const sudoUsers = await getSudoUsers();
         const bannedUsers = await getBannedUsers();
@@ -56,9 +56,9 @@ module.exports = toxic = async (client, m, chatUpdate, store) => {
         var budy = typeof m.text == "string" ? m.text : "";
 
         const timestamp = speed();
-        const toxicspeed = speed() - timestamp;
+        const davespeed = speed() - timestamp;
 
-        const filePath = require('path').resolve(__dirname, '../toxic.jpg');
+        const filePath = require('path').resolve(__dirname, '../dave.jpg');
         const pict = fs.readFileSync(filePath);
 
         const commandName = body && (body.startsWith(prefix) || body.startsWith('/')) ? 
@@ -118,7 +118,7 @@ module.exports = toxic = async (client, m, chatUpdate, store) => {
         const context = {
             client, m, text, Owner, chatUpdate, store, isBotAdmin, isAdmin, IsGroup, participants,
             pushname, body, budy, totalCommands, args, mime, qmsg, msgToxic, botNumber, itsMe,
-            packname, generateProfilePicture, groupMetadata, toxicspeed, mycode,
+            packname, generateProfilePicture, groupMetadata, davespeed, mycode,
             fetchJson, exec, getRandom, UploadFileUgu, TelegraPh, prefix, cmd, botname, mode, gcpresence, antitag, antidelete: antideleteSetting, fetchBuffer, store, uploadtoimgur, chatUpdate,
             getGroupAdmins: () => participants.filter(p => p.admin !== null).map(p => p.jid), pict, Tag
         };

@@ -1,5 +1,5 @@
 const {
-  default: toxicConnect,
+  default: daveConnect,
   useMultiFileAuthState,
   DisconnectReason,
   fetchLatestBaileysVersion,
@@ -13,7 +13,7 @@ const { readFileSync } = require('fs');
 
 const path = require('path');
 
-const filePath = path.resolve(__dirname, '../toxic.jpg'); 
+const filePath = path.resolve(__dirname, '../dave.jpg'); 
 const kali = readFileSync(filePath);
 
 function smsg(conn, m, store) {

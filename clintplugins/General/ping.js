@@ -6,7 +6,7 @@ module.exports = {
   aliases: ['p'],
   description: 'Checks the bot\'s response time, uptime, and status with a sassy vibe',
   run: async (context) => {
-    const { client, m, toxicspeed } = context;
+    const { client, m, davespeed } = context;
 
     try {
       // Validate m.sender
@@ -15,9 +15,9 @@ module.exports = {
         return m.reply(`◎━━━━━━━━━━━━━━━━◎\n│❒ Can't read your number, genius! Try again.\nCheck https://github.com/xhclintohn/DAVE-XD\n◎━━━━━━━━━━━━━━━━◎`);
       }
 
-      // Validate toxicspeed
-      if (typeof toxicspeed !== 'number' || isNaN(toxicspeed)) {
-        console.error(`Invalid toxicspeed: ${toxicspeed}`);
+      // Validate davespeed
+      if (typeof davespeed !== 'number' || isNaN(davespeed)) {
+        console.error(`Invalid davespeed: ${davespeed}`);
         return m.reply(`◎━━━━━━━━━━━━━━━━◎\n│❒ Ping's broken, @${m.sender.split('@')[0]}! Speed data's fucked.\nCheck https://github.com/xhclintohn/DAVE-XD\n◎━━━━━━━━━━━━━━━━◎`, { mentions: [m.sender] });
       }
 
@@ -56,7 +56,7 @@ module.exports = {
       };
 
       const userNumber = m.sender.split('@')[0];
-      const pingTime = toxicspeed.toFixed(4);
+      const pingTime = davespeed.toFixed(4);
       const uptimeText = formatUptime(process.uptime());
       const botName = 'DAVE-XD';
       const replyText = `

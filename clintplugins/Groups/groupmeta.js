@@ -61,7 +61,7 @@ module.exports = async (context) => {
                 try {
                     const restrict = action === 'on';
                     await client.groupSettingUpdate(m.chat, restrict ? 'locked' : 'unlocked');
-                    await m.reply(`◈━━━━━━━━━━━━━━━━◈\n❒ Group editing is now ${restrict ? 'locked to admins only' : 'open to all members'}! Keep it toxic! 😎\n◈━━━━━━━━━━━━━━━━◈`, {
+                    await m.reply(`◈━━━━━━━━━━━━━━━━◈\n❒ Group editing is now ${restrict ? 'locked to admins only' : 'open to all members'}! Keep it dave! 😎\n◈━━━━━━━━━━━━━━━━◈`, {
                         contextInfo: {
                             externalAdReply: {
                                 title: `DAVE-XD`,
