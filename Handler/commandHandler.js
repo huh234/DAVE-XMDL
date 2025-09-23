@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const cmdsDir = path.join(__dirname, '..', 'clintplugins');
+const cmdsDir = path.join(__dirname, '..', 'davecommandes');
 
 function findAllCommandFiles(dir) {
     let commandFiles = [];
