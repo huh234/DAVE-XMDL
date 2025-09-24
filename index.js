@@ -4,4 +4,4 @@ var i=b;function b(c,d){var e=a();return b=function(f,g){f=f-0x11d;var h=e[f];if
 // gift_daveダ Security Mark 0
 var xh_clianzagift_daveダ_0 = "deadcode"; // gift_daveダ
 // gift_daveダ Obfuscation Complete
-// Protected by gift_daveダ - 8/8/2025, 12:29:58 PM
+// Protected by gift_daveダ - 24/9/2025, 04:50:58 PM
