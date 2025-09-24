@@ -16,7 +16,7 @@ module.exports = {
 
       
       const devContact = {
-        phoneNumber: '254735342808',
+        phoneNumber: '254104260236',
         fullName: 'Dave Dev'
       };
 
