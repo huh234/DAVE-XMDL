@@ -102,7 +102,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
         ? [
             `◈━━━━━━━━━━━━━━━━◈`,
             `│❒ *${getGreeting()}*`,
-            `│❒ Welcome to *${botName}*! You're now connected.`,
+            `│❒ Welcome *${botName}*! You're now connected to 𝙳𝙰𝚅𝙴-x𝙳.`,
             ``,
             `✨ *Bot Name*: ${botName}`,
             `🔧 *Mode*: ${settings.mode}`,
@@ -122,13 +122,13 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
             `│❒ *${getGreeting()}*`,
             `│❒ Welcome back to *${botName}*! Connection established.`,
             ``,
-            `✨ *Bot Name*: ${botName}`,
+            `🕳️ *Bot Name*: ${botName}`,
             `🔧 *Mode*: ${settings.mode}`,
-            `➡️ *Prefix*: ${settings.prefix}`,
-            `📋 *Commands*: ${totalCommands}`,
-            `🕒 *Time*: ${getCurrentTime()}`,
-            `💾 *Database*: Postgres SQL`,
-            `📚 *Library*: Baileys`,
+            `🕳️ *Prefix*: ${settings.prefix}`,
+            `🕳️ *Commands*: ${totalCommands}`,
+            `🕳️ *Time*: ${getCurrentTime()}`,
+            `🕳️ *Database*: Postgres SQL`,
+            `🕳️ *Library*: Baileys`,
             ``,
             `│❒ Ready to proceed? Select an option below.`,
             ``,
@@ -152,7 +152,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
               showAdAttribution: false,
               title: botName,
               body: `Bot initialized successfully.`,
-              sourceUrl: `https://github.com/huh234/DAVE-XD`,
+              sourceUrl: `https://github.com/giftdee/DAVE-XD`,
               mediaType: 1,
               renderLargerThumbnail: true
             }
@@ -181,7 +181,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
               showAdAttribution: false,
               title: botName,
               body: `Select an option to proceed.`,
-              sourceUrl: `https://github.com/huh234/DAVE-XD`,
+              sourceUrl: `https://github.com/giftdee/DAVE-XD`,
               mediaType: 1,
               renderLargerThumbnail: true
             }
@@ -196,7 +196,7 @@ async function connectionHandler(socket, connectionUpdate, reconnect) {
 
     console.log(
       `◈━━━━━━━━━━━━━━━━◈\n` +
-      `│❒ Bot successfully connected to WhatsApp ✅💫\n` +
+      `│❒ Bot successfully connected to WhatsApp 🐍\n` +
       `│❒ Loaded ${totalCommands} plugins. DAVE-XD is ready to dominate! 😈\n` +
       `┗━━━━━━━━━━━━━━━┛`
     );
