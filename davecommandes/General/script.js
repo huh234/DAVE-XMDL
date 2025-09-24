@@ -60,8 +60,8 @@ module.exports = async (context) => {
         externalAdReply: {
           showAdAttribution: false,
           title: `${botname}`,
-          body: `Yo! Don’t fuck this up.`,
-          sourceUrl: `https://github.com/huh234/DAVE-XD`,
+          body: `God loves you!.`,
+          sourceUrl: `https://github.com/giftdee/DAVE-XD`,
           mediaType: 1,
           renderLargerThumbnail: true
         }
@@ -69,6 +69,6 @@ module.exports = async (context) => {
     }, { quoted: m });
   } catch (error) {
     console.error('Error in repo command:', error);
-    await client.sendMessage(m.chat, { text: `◈━━━━━━━━━━━━━━━━◈\n│❒ Couldn’t grab repo info, something’s fucked up. Check it yourself: https://github.com/huh234/DAVE-XD` }, { quoted: m });
+    await client.sendMessage(m.chat, { text: `◈━━━━━━━━━━━━━━━━◈\n│❒ Couldn’t grab repo info, something’s fucked up. Check it yourself: https://github.com/giftdee/DAVE-XD` }, { quoted: m });
   }
 };
